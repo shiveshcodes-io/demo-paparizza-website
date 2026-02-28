@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paparizza – Trattoria, Pizzeria & Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-brand">
+    <div class="nav-logo">P</div>
+    <div class="nav-brand-text">
+      <h1>Paparizza</h1>
+      <span>Trattoria, Pizzeria &amp; Bar</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#location">Location</a>
+    <a href="#reserve">Reserve</a>
+  </div>
+  <a href="tel:+911141568900" class="btn-call">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    Call Now
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#menu" class="mobile-link">Menu</a>
+  <a href="#gallery" class="mobile-link">Gallery</a>
+  <a href="#reviews" class="mobile-link">Reviews</a>
+  <a href="#location" class="mobile-link">Location</a>
+  <a href="#reserve" class="mobile-link">Reserve</a>
+  <a href="tel:+911141568900" class="mobile-call">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    Call +91 11 4156 8900
+  </a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-tag">Trattoria, Pizzeria &amp; Bar</span>
+    <h1>Paparizza</h1>
+    <p>Experience the finest Italian flavors in the heart of Greater Kailash.<br>From wood-fired pizzas to handmade pasta, every dish tells a story.</p>
+    <a href="#reserve" class="btn-reserve">Reserve a Table</a>
+  </div>
+  <div class="scroll-hint">
+    <div class="mouse"><div class="wheel"></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Fresh pasta being made" />
+        <div class="about-badge">
+          <div class="num">25+</div>
+          <div class="lbl">Years of Excellence</div>
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <span class="tag">Our Story</span>
+        <h2>A Tradition of Authentic Italian Cuisine</h2>
+        <p>Since 1999, Paparizza has been bringing the authentic taste of Italy to Greater Kailash, Delhi. Our passion for traditional Italian cooking is matched only by our commitment to using the finest ingredients.</p>
+        <p>Every dish is crafted with love, from our wood-fired pizzas with hand-tossed dough to our pasta made fresh daily. Our recipes have been passed down through generations, ensuring each bite transports you straight to the heart of Italy.</p>
+        <p>Led by Chef Giuseppe Rossi, who trained in Naples and Rome, our kitchen combines time-honored techniques with contemporary flair.</p>
+        <div class="about-stats">
+          <div class="stat-item"><div class="num">500+</div><div class="lbl">Daily Guests</div></div>
+          <div class="stat-item"><div class="num">50+</div><div class="lbl">Menu Items</div></div>
+          <div class="stat-item"><div class="num">4.8&#9733;</div><div class="lbl">Customer Rating</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="container">
+    <p class="section-tag reveal">Our Menu</p>
+    <h2 class="section-title reveal">Discover Authentic Italian Flavors</h2>
+    <div class="menu-filters reveal">
+      <button class="filter-btn active" data-filter="pastas">Pastas</button>
+      <button class="filter-btn" data-filter="garlic">Garlic Breads</button>
+      <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+      <button class="filter-btn" data-filter="shakes">Shakes</button>
+      <button class="filter-btn" data-filter="juices">Juices &amp; Smoothies</button>
+      <button class="filter-btn" data-filter="salads">Salads</button>
+      <button class="filter-btn" data-filter="soups">Soups</button>
+    </div>
+    <div class="menu-grid" id="menuGrid">
+      <!-- PASTAS -->
+      <div class="menu-item menu-card" data-cat="pastas">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80" alt="Aglio e Olio" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Aglio e Olio <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;500</span>
+          </div>
+          <p class="menu-card-desc">Spaghetti tossed in olive oil with garlic, parmesan, chili, herbs, lemon and freshly cracked pepper</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card" data-cat="pastas">
+        <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=200&q=80" alt="Alfredo" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Alfredo <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;600</span>
+          </div>
+          <p class="menu-card-desc">Pasta made with in-house creamy mushroom sauce</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card" data-cat="pastas">
+        <img src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=200&q=80" alt="Mock Meat Ragu" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Mock Meat Ragu <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;600</span>
+          </div>
+          <p class="menu-card-desc">Soya keema inspired pasta along with parmesan and garlic oil base</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card" data-cat="pastas">
+        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&q=80" alt="Classic Arrabiata" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Classic Arrabiata <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;500</span>
+          </div>
+          <p class="menu-card-desc">Pasta cooked in spicy tomato sauce with garlic</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card" data-cat="pastas">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&q=80" alt="Cacio e Pepe" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Cacio e Pepe <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;600</span>
+          </div>
+          <p class="menu-card-desc">This spaghetti-cacio e pepe recipe is made with pecorino romano, olive oil, pepper and garlic, for a delicious dish</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card" data-cat="pastas">
+        <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=200&q=80" alt="Bolognese" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Bolognese</span>
+            <span class="menu-price">&#8377;650</span>
+          </div>
+          <p class="menu-card-desc">Pasta slow-cooked with minced lamb or tomato basil and creamy cheese sauce</p>
+        </div>
+      </div>
+      <!-- GARLIC BREADS -->
+      <div class="menu-item menu-card hidden" data-cat="garlic">
+        <img src="https://images.unsplash.com/photo-1619531040576-f9416740661d?w=200&q=80" alt="Classic Garlic Bread" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Classic Garlic Bread <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;180</span>
+          </div>
+          <p class="menu-card-desc">Toasted baguette slices with garlic butter and fresh herbs</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="garlic">
+        <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=200&q=80" alt="Cheesy Garlic Bread" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Cheesy Garlic Bread <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;220</span>
+          </div>
+          <p class="menu-card-desc">Garlic butter bread loaded with mozzarella and cheddar, baked to perfection</p>
+        </div>
+      </div>
+      <!-- APPETIZERS -->
+      <div class="menu-item menu-card hidden" data-cat="appetizers">
+        <img src="https://images.unsplash.com/photo-1603046891744-1f7cb4e70590?w=200&q=80" alt="Ricotta Avocado Toast" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Ricotta &amp; Avocado Toast <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;350</span>
+          </div>
+          <p class="menu-card-desc">Open-faced sandwich with creamy ricotta, smashed avocado on artisan bread</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="appetizers">
+        <img src="https://images.unsplash.com/photo-1598679253544-2c97992403ea?w=200&q=80" alt="Chicken Wings" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Chicken Wings</span>
+            <span class="menu-price">&#8377;495</span>
+          </div>
+          <p class="menu-card-desc">Classic meaty bone-in wings tossed in your choice of sauce</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="appetizers">
+        <img src="https://images.unsplash.com/photo-1639024471283-03518883512d?w=200&q=80" alt="Onion Rings" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Onion Rings <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;340</span>
+          </div>
+          <p class="menu-card-desc">Coated in a light crispy batter, fried to golden perfection</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="appetizers">
+        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=200&q=80" alt="Mozzarella Cheese Fingers" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Mozzarella Cheese Fingers <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;470</span>
+          </div>
+          <p class="menu-card-desc">Crispy mozzarella sticks served with a dipping sauce</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="appetizers">
+        <img src="https://images.unsplash.com/photo-1614638592949-bb5ccb72c30c?w=200&q=80" alt="Chicken Parmigiana" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Chicken Parmigiana</span>
+            <span class="menu-price">&#8377;540</span>
+          </div>
+          <p class="menu-card-desc">Breaded chicken with tomato sauce, mozzarella and parmesan</p>
+        </div>
+      </div>
+      <!-- SHAKES -->
+      <div class="menu-item menu-card hidden" data-cat="shakes">
+        <img src="https://images.unsplash.com/photo-1572490122747-3f3f9b4b6769?w=200&q=80" alt="Chocolate Shake" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Classic Chocolate Shake <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;250</span>
+          </div>
+          <p class="menu-card-desc">Rich and creamy chocolate milkshake blended with premium ice cream</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="shakes">
+        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=200&q=80" alt="Strawberry Shake" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Strawberry Bliss <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;270</span>
+          </div>
+          <p class="menu-card-desc">Fresh strawberries blended with vanilla ice cream and chilled milk</p>
+        </div>
+      </div>
+      <!-- JUICES -->
+      <div class="menu-item menu-card hidden" data-cat="juices">
+        <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?w=200&q=80" alt="Fresh Lime Soda" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Fresh Lime Soda <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;120</span>
+          </div>
+          <p class="menu-card-desc">Freshly squeezed lime with soda water, a pinch of salt and mint</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="juices">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=200&q=80" alt="Mango Smoothie" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Mango Smoothie <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;200</span>
+          </div>
+          <p class="menu-card-desc">Ripe Alphonso mango blended with yogurt and a hint of cardamom</p>
+        </div>
+      </div>
+      <!-- SALADS -->
+      <div class="menu-item menu-card hidden" data-cat="salads">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&q=80" alt="Caesar Salad" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Classic Caesar <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;320</span>
+          </div>
+          <p class="menu-card-desc">Crisp romaine lettuce, parmesan shavings, croutons with house caesar dressing</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="salads">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=200&q=80" alt="Caprese Salad" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Caprese Salad <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;380</span>
+          </div>
+          <p class="menu-card-desc">Fresh mozzarella, ripe tomatoes, basil drizzled with balsamic and extra virgin olive oil</p>
+        </div>
+      </div>
+      <!-- SOUPS -->
+      <div class="menu-item menu-card hidden" data-cat="soups">
+        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=200&q=80" alt="Minestrone" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Minestrone <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;280</span>
+          </div>
+          <p class="menu-card-desc">Classic Italian vegetable soup with pasta, beans and rich tomato broth</p>
+        </div>
+      </div>
+      <div class="menu-item menu-card hidden" data-cat="soups">
+        <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?w=200&q=80" alt="Cream of Mushroom" />
+        <div class="menu-card-body">
+          <div class="menu-card-header">
+            <span class="menu-card-name">Cream of Mushroom <span class="veg-icon"></span></span>
+            <span class="menu-price">&#8377;300</span>
+          </div>
+          <p class="menu-card-desc">Velvety mushroom cream soup with truffle oil and fresh thyme</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <p class="section-tag reveal">Gallery</p>
+    <h2 class="section-title reveal">A Visual Feast</h2>
+    <p class="section-sub reveal">Step inside Paparizza and experience the warmth of Italian hospitality</p>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=800&q=80" alt="Bar" />
+        <div class="gallery-overlay"><span class="gallery-label">Our Bar</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Pizza" />
+        <div class="gallery-overlay"><span class="gallery-label">Wood-Fired Pizza</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=500&q=80" alt="Fresh Pasta" />
+        <div class="gallery-overlay"><span class="gallery-label">Fresh Pasta</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80" alt="Elegant Table Setting" />
+        <div class="gallery-overlay"><span class="gallery-label">Elegant Table Setting</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&q=80" alt="Desserts" />
+        <div class="gallery-overlay"><span class="gallery-label">Italian Desserts</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <p class="section-tag reveal">Testimonials</p>
+    <h2 class="section-title reveal">What Our Guests Say</h2>
+    <div class="rating-summary reveal">
+      <div class="stars-row">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" style="fill:#ddd"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="rating-text">4.8 out of 5 (1,200+ reviews)</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">"Absolutely authentic Italian experience! The pasta carbonara was divine, and the ambiance transported me straight to Rome. Chef Giuseppe personally checked on our table. Will definitely return!"</p>
+        <div class="reviewer"><div class="reviewer-avatar">PS</div><div><div class="reviewer-name">Priya Sharma</div><div class="reviewer-date">February 2026</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">"Best Italian restaurant in Delhi hands down. The wood-fired pizzas are perfection — crispy crust, fresh ingredients. The tiramisu is a must-try. Service is impeccable and the wine selection is excellent."</p>
+        <div class="reviewer"><div class="reviewer-avatar">RK</div><div><div class="reviewer-name">Rajesh Kumar</div><div class="reviewer-date">January 2026</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">"Paparizza has become our go-to place for special occasions. The romantic ambiance, live music on weekends, and consistently amazing food make every visit memorable. Highly recommend the Quattro Formaggi!"</p>
+        <div class="reviewer"><div class="reviewer-avatar">AM</div><div><div class="reviewer-name">Ananya Mehta</div><div class="reviewer-date">January 2026</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">"Outstanding dining experience! The attention to detail, from the table setting to the presentation of dishes, is remarkable. The staff is knowledgeable and friendly. A true Italian gem in GK."</p>
+        <div class="reviewer"><div class="reviewer-avatar">VG</div><div><div class="reviewer-name">Vikram Gupta</div><div class="reviewer-date">December 2025</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">"I've been to Italy multiple times, and Paparizza captures that authentic Italian spirit perfectly. The fresh pasta is made in-house, and you can taste the difference. Absolutely love this place!"</p>
+        <div class="reviewer"><div class="reviewer-avatar">SM</div><div><div class="reviewer-name">Sunita Malhotra</div><div class="reviewer-date">January 2026</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">"Everything from appetizers to desserts was exceptional. The portions are generous, prices are reasonable for the quality. The espresso is the best I've had in Delhi. A must-visit for Italian food lovers!"</p>
+        <div class="reviewer"><div class="reviewer-avatar">AR</div><div><div class="reviewer-name">Arjun Reddy</div><div class="reviewer-date">February 2026</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <p class="section-tag reveal">Visit Us</p>
+    <h2 class="section-title reveal">Find Us in Greater Kailash</h2>
+    <div class="location-grid">
+      <div class="reveal-left">
+        <iframe class="map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.3428290042637!2d77.23472421508257!3d28.536553282453437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1c9c0a98bc5%3A0x5e44ef3e51f6af4d!2sGreater%20Kailash%201%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1630000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <div class="location-info reveal-right">
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <div class="info-title">Address</div>
+            <div class="info-detail">M-42, Greater Kailash-1 (GK-1),<br>New Delhi &ndash; 110048, India</div>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          </div>
+          <div>
+            <div class="info-title">Contact</div>
+            <div class="info-detail">
+              Phone: +91 11 4156 8900<br>
+              Email: info@paparizza.in<br>
+              WhatsApp: +91 98765 43210
+            </div>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm.01 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          </div>
+          <div>
+            <div class="info-title">Opening Hours</div>
+            <div class="info-detail">
+              <strong>Monday &ndash; Thursday:</strong> 12:00 PM &ndash; 11:00 PM<br>
+              <strong>Friday &ndash; Sunday:</strong> 12:00 PM &ndash; 12:00 AM
+            </div>
+            <div class="hours-highlight">Happy Hours: 4:00 PM &ndash; 7:00 PM (All Days)</div>
+          </div>
+        </div>
+        <div class="location-note">
+          <p><strong>Parking Available:</strong> Valet parking and ample street parking nearby</p>
+          <p style="margin-top:6px"><strong>Metro Access:</strong> 5 minutes walk from Greater Kailash Metro Station (Violet Line)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section id="reserve">
+  <div class="container">
+    <p class="section-tag reveal">Book a Table</p>
+    <h2 class="section-title reveal">Reserve Your Experience</h2>
+    <p class="section-sub reveal">Join us for an unforgettable Italian dining experience</p>
+    <div class="reserve-form-wrap reveal">
+      <div class="form-grid">
+        <div class="form-field">
+          <label>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Full Name *
+          </label>
+          <input id="res-name" type="text" placeholder="John Doe" />
+        </div>
+        <div class="form-field">
+          <label>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Address *
+          </label>
+          <input id="res-email" type="email" placeholder="john@example.com" />
+        </div>
+        <div class="form-field">
+          <label>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+            Phone Number *
+          </label>
+          <input id="res-phone" type="tel" placeholder="+91 98765 43210" />
+        </div>
+        <div class="form-field">
+          <label>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            Number of Guests *
+          </label>
+          <select id="res-guests">
+            <option>1 Guest</option>
+            <option selected>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6 Guests</option>
+            <option>7+ Guests</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Date *
+          </label>
+          <input id="res-date" type="date" />
+        </div>
+        <div class="form-field">
+          <label>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Time *
+          </label>
+          <select id="res-time">
+            <option value="">Select time</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+            <option>9:00 PM</option>
+            <option>10:00 PM</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label>Special Requests (Optional)</label>
+          <textarea id="res-special" placeholder="Any dietary restrictions, special occasions, or seating preferences..."></textarea>
+        </div>
+      </div>
+      <button class="btn-confirm" id="confirmBtn" onclick="handleReservation(this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.126 1.535 5.862L.057 23.43a.75.75 0 00.921.921l5.568-1.478A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.892 0-3.663-.525-5.176-1.436l-.371-.22-3.305.877.877-3.305-.22-.371A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Send via WhatsApp
+      </button>
+      <p class="form-note">For immediate assistance, call us at <a href="tel:+911141568900">+91 11 4156 8900</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-brand" style="text-decoration:none;">
+          <div class="nav-logo">P</div>
+          <div class="nav-brand-text">
+            <h1>Paparizza</h1>
+            <span>Trattoria, Pizzeria &amp; Bar</span>
+          </div>
+        </a>
+        <p>Experience authentic Italian cuisine in the heart of Greater Kailash, New Delhi. Where tradition meets taste.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#about">About Us</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#reserve">Reservations</a>
+        <a href="#location">Contact</a>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Opening Hours</h4>
+        <p><strong style="color:rgba(255,255,255,.75)">Monday &ndash; Thursday</strong><br>12:00 PM &ndash; 11:00 PM</p>
+        <p style="margin-top:10px"><strong style="color:rgba(255,255,255,.75)">Friday &ndash; Sunday</strong><br>12:00 PM &ndash; 12:00 AM</p>
+        <span class="happy">Happy Hours<br>4:00 PM &ndash; 7:00 PM (All Days)</span>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Get In Touch</h4>
+        <p><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> M-42, Greater Kailash-1, New Delhi &ndash; 110048</p>
+        <p><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> +91 11 4156 8900</p>
+        <p><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> info@paparizza.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Paparizza. All rights reserved. Crafted with <span class="heart">&#9829;</span> in Delhi.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
